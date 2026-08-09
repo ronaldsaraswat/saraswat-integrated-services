@@ -31,20 +31,23 @@
 
 
     <!--
-        DEVELOPMENT SETTING
-
-        Keep noindex, nofollow while the site is hosted
-        on the temporary GitHub Pages development URL.
-
-        Change to:
-        index, follow
-
-        only when the final root domain is connected.
+        KEEP THIS DURING FINAL DEVELOPMENT.
+        CHANGE TO "index, follow" WHEN READY FOR GOOGLE.
     -->
 
     <meta
         name="robots"
         content="noindex, nofollow"
+    >
+
+
+    <!-- =========================
+         CANONICAL URL
+    ========================== -->
+
+    <link
+        rel="canonical"
+        href="https://saraswatintegratedservices.com/"
     >
 
 
@@ -64,7 +67,7 @@
 
     <link
         rel="stylesheet"
-        href="css/style.css?v=1"
+        href="css/style.css?v=3"
     >
 
 </head>
@@ -158,48 +161,79 @@
             class="hero"
         >
 
-            <div class="hero-inner">
+            <div class="hero-grid">
 
 
-                <p class="eyebrow">
-                    Saraswat Integrated Services
-                </p>
+                <!-- =========================
+                     HERO TEXT
+                ========================== -->
+
+                <div class="hero-content">
 
 
-                <h1>
-                    Ideas across
-                    <span>markets, technology</span>
-                    and borders.
-                </h1>
+                    <p class="eyebrow">
+                        Saraswat Integrated Services
+                    </p>
 
 
-                <p class="hero-statement">
-                    Building and exploring practical ventures across
-                    digital platforms, international opportunities,
-                    entrepreneurship and emerging business concepts.
-                </p>
+                    <h1>
+                        Ideas across
+                        <span>markets, technology</span>
+                        and borders.
+                    </h1>
 
 
-                <div class="hero-actions">
+                    <p class="hero-statement">
+                        Building and exploring practical ventures across
+                        digital platforms, international opportunities,
+                        entrepreneurship and emerging business concepts.
+                    </p>
 
 
-                    <a
-                        class="button button-primary"
-                        href="#ventures"
-                    >
-                        Explore SIS
-                    </a>
+                    <div class="hero-actions">
 
 
-                    <a
-                        class="button button-secondary"
-                        href="#contact"
-                    >
-                        Contact
-                    </a>
+                        <a
+                            class="button button-primary"
+                            href="#ventures"
+                        >
+                            Explore SIS
+                        </a>
+
+
+                        <a
+                            class="button button-secondary"
+                            href="#contact"
+                        >
+                            Contact
+                        </a>
+
+
+                    </div>
 
 
                 </div>
+
+
+
+                <!-- =========================
+                     INDIA ↔ EUROPE ARTWORK
+                     DESKTOP + IPAD ONLY
+                ========================== -->
+
+                <figure
+                    class="hero-visual"
+                    aria-hidden="true"
+                >
+
+                    <img
+                        class="hero-network-image"
+                        src="assets/images/sis-india-europe-network.png"
+                        alt=""
+                    >
+
+                </figure>
+
 
 
                 <div
@@ -227,10 +261,6 @@
 
 
                 <div class="section-heading">
-
-                    <p class="section-number">
-                        01
-                    </p>
 
                     <h2>
                         About SIS
@@ -282,7 +312,7 @@
 
 
         <!-- =========================
-             FOCUS
+             AREAS OF FOCUS
         ========================== -->
 
         <section
@@ -294,10 +324,6 @@
 
 
                 <div>
-
-                    <p class="section-number">
-                        02
-                    </p>
 
                     <h2>
                         Areas of Focus
@@ -321,10 +347,6 @@
 
                 <article class="focus-card">
 
-                    <span>
-                        01
-                    </span>
-
                     <h3>
                         Digital Platforms
                     </h3>
@@ -339,10 +361,6 @@
 
 
                 <article class="focus-card">
-
-                    <span>
-                        02
-                    </span>
 
                     <h3>
                         Cross-Border Opportunities
@@ -359,10 +377,6 @@
 
                 <article class="focus-card">
 
-                    <span>
-                        03
-                    </span>
-
                     <h3>
                         Innovation & Entrepreneurship
                     </h3>
@@ -377,10 +391,6 @@
 
 
                 <article class="focus-card">
-
-                    <span>
-                        04
-                    </span>
 
                     <h3>
                         Emerging Ventures
@@ -415,10 +425,6 @@
 
                 <div>
 
-                    <p class="section-number">
-                        03
-                    </p>
-
                     <h2>
                         Ventures
                     </h2>
@@ -449,13 +455,16 @@
 
                 <div class="venture-main">
 
+
                     <p class="venture-category">
                         Saraswat Integrated Services
                     </p>
 
+
                     <h3>
                         Building selectively.
                     </h3>
+
 
                     <p>
                         Current initiatives span digital, commercial and
@@ -463,6 +472,7 @@
                         will be introduced as individual projects reach
                         the appropriate stage of development.
                     </p>
+
 
                 </div>
 
@@ -523,10 +533,6 @@
 
                 <div class="section-heading">
 
-                    <p class="section-number">
-                        04
-                    </p>
-
                     <h2>
                         Founder
                     </h2>
@@ -566,6 +572,7 @@
                         <span aria-hidden="true">
                             ↗
                         </span>
+
                     </a>
 
 
@@ -589,47 +596,228 @@
             <div class="contact-inner">
 
 
-                <p class="eyebrow">
-                    Contact
-                </p>
+                <div class="contact-header">
 
 
-                <h2>
-                    Partnerships.
-                    <br>
-                    Projects.
-                    <br>
-                    New opportunities.
-                </h2>
+                    <p class="eyebrow">
+                        Contact
+                    </p>
 
 
-                <p class="contact-copy">
-                    Saraswat Integrated Services is open to relevant
-                    business discussions, project collaborations,
-                    commercial opportunities and partnerships.
-                </p>
+                    <h2>
+                        Partnerships.
+                        <br>
+                        Projects.
+                        <br>
+                        New opportunities.
+                    </h2>
 
 
-                <div class="contact-actions">
-
-
-                    <a
-                        class="button button-light"
-                        href="https://ronald.saraswatintegratedservices.com/#contact"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Send an enquiry
-                    </a>
+                    <p class="contact-intro">
+                        For business enquiries, project collaborations,
+                        commercial opportunities or general questions,
+                        send a message directly through the form below.
+                    </p>
 
 
                 </div>
 
 
-                <p class="contact-note">
-                    A dedicated SIS business contact channel will be
-                    introduced as the platform develops.
-                </p>
+
+                <div class="contact-layout">
+
+
+                    <!-- =========================
+                         CONTACT FORM
+                    ========================== -->
+
+                    <form
+                        class="contact-form"
+                        action="https://formspree.io/f/mwlevjrv"
+                        method="POST"
+                    >
+
+
+                        <div class="form-row">
+
+
+                            <div class="form-field">
+
+                                <label for="name">
+                                    Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    autocomplete="name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-field">
+
+                                <label for="email">
+                                    Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    autocomplete="email"
+                                    required
+                                >
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="form-field">
+
+                            <label for="organisation">
+                                Organisation / Company
+
+                                <span>
+                                    Optional
+                                </span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="organisation"
+                                name="organisation"
+                                autocomplete="organization"
+                            >
+
+                        </div>
+
+
+
+                        <div class="form-field">
+
+                            <label for="subject">
+                                Subject
+                            </label>
+
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <div class="form-field">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="7"
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+
+                        <!-- Spam protection -->
+
+                        <div
+                            class="form-honeypot"
+                            aria-hidden="true"
+                        >
+
+                            <label for="website">
+                                Leave this field empty
+                            </label>
+
+                            <input
+                                type="text"
+                                id="website"
+                                name="_gotcha"
+                                tabindex="-1"
+                                autocomplete="off"
+                            >
+
+                        </div>
+
+
+
+                        <button
+                            class="form-submit"
+                            type="submit"
+                        >
+                            Send message
+
+                            <span aria-hidden="true">
+                                →
+                            </span>
+
+                        </button>
+
+
+
+                        <div
+                            class="form-status"
+                            role="status"
+                            aria-live="polite"
+                        ></div>
+
+
+                    </form>
+
+
+
+                    <!-- =========================
+                         CONTACT SIDE INFORMATION
+                    ========================== -->
+
+                    <aside class="contact-side">
+
+
+                        <p class="contact-side-label">
+                            Saraswat Integrated Services
+                        </p>
+
+
+                        <p>
+                            A venture platform exploring selected
+                            opportunities across digital, international
+                            and entrepreneurial spaces.
+                        </p>
+
+
+                        <p>
+                            SIS develops projects selectively and introduces
+                            further information as individual initiatives
+                            reach the appropriate stage.
+                        </p>
+
+
+                        <p class="contact-side-note">
+                            For business enquiries, collaborations and
+                            project discussions, use the contact form.
+                        </p>
+
+
+                    </aside>
+
+
+                </div>
 
 
             </div>
@@ -682,10 +870,132 @@
 
 
     <!-- =========================
-         JAVASCRIPT
+         NAVIGATION JAVASCRIPT
     ========================== -->
 
     <script src="js/main.js"></script>
+
+
+
+    <!-- =========================
+         CONTACT FORM
+         ASYNCHRONOUS FORMSPREE SUBMISSION
+    ========================== -->
+
+    <script>
+
+        const contactForm =
+            document.querySelector(".contact-form");
+
+        const formStatus =
+            document.querySelector(".form-status");
+
+
+        if (contactForm && formStatus) {
+
+            contactForm.addEventListener(
+                "submit",
+                async (event) => {
+
+                    event.preventDefault();
+
+
+                    const submitButton =
+                        contactForm.querySelector(
+                            ".form-submit"
+                        );
+
+
+                    const originalButtonHTML =
+                        submitButton.innerHTML;
+
+
+                    submitButton.disabled = true;
+
+                    submitButton.textContent =
+                        "Sending...";
+
+
+                    formStatus.textContent = "";
+
+                    formStatus.classList.remove(
+                        "success",
+                        "error"
+                    );
+
+
+                    try {
+
+                        const formData =
+                            new FormData(contactForm);
+
+
+                        const response =
+                            await fetch(
+                                contactForm.action,
+                                {
+                                    method: "POST",
+                                    body: formData,
+                                    headers: {
+                                        "Accept":
+                                            "application/json"
+                                    }
+                                }
+                            );
+
+
+                        if (response.ok) {
+
+                            contactForm.reset();
+
+                            formStatus.textContent =
+                                "Thank you. Your message has been sent successfully.";
+
+                            formStatus.classList.add(
+                                "success"
+                            );
+
+                        }
+
+                        else {
+
+                            formStatus.textContent =
+                                "Your message could not be sent. Please try again.";
+
+                            formStatus.classList.add(
+                                "error"
+                            );
+
+                        }
+
+                    }
+
+                    catch (error) {
+
+                        formStatus.textContent =
+                            "Your message could not be sent. Please check your connection and try again.";
+
+                        formStatus.classList.add(
+                            "error"
+                        );
+
+                    }
+
+                    finally {
+
+                        submitButton.disabled = false;
+
+                        submitButton.innerHTML =
+                            originalButtonHTML;
+
+                    }
+
+                }
+            );
+
+        }
+
+    </script>
 
 
 </body>
