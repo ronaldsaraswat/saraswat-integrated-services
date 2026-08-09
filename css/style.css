@@ -278,15 +278,13 @@ button:focus-visible {
     width: 100%;
 }
 
-.eyebrow {
-    margin-bottom: 28px;
+.hero .eyebrow {
+    margin-bottom: 26px;
 
-    color: var(--accent);
-
-    font-size: 0.75rem;
-    font-weight: 750;
-    letter-spacing: 0.17em;
-
+    color: #9b6b43; /* or your current accent */
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
     text-transform: uppercase;
 }
 
@@ -1111,6 +1109,13 @@ button:focus-visible {
 /* =========================
    MOBILE
 ========================= */
+
+@media (max-width: 600px) {
+    .hero .eyebrow {
+        font-size: 0.82rem;
+        letter-spacing: 0.16em;
+    }
+}
 
 @media (max-width: 600px) {
 
