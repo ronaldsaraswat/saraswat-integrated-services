@@ -1436,6 +1436,345 @@ button:focus-visible {
 
 }
 
+/* =========================================================
+   FINAL SIS HERO / TABLET / FOUNDER OVERRIDES
+========================================================= */
+
+
+/* =========================
+   HERO — DESKTOP
+========================= */
+
+.hero {
+    width: min(92%, var(--content-width));
+    min-height: calc(100svh - 78px);
+
+    margin: 0 auto;
+
+    padding:
+        clamp(80px, 8vw, 115px)
+        0
+        clamp(85px, 8vw, 110px);
+
+    display: flex;
+    align-items: center;
+}
+
+
+.hero-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.28fr)
+        minmax(300px, 0.72fr);
+
+    align-items: center;
+
+    gap: clamp(35px, 5vw, 70px);
+}
+
+
+.hero-content {
+    min-width: 0;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Larger company name */
+
+.hero .eyebrow {
+    margin-bottom: 27px;
+
+    color: var(--accent);
+
+    font-size: 0.92rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+
+    text-transform: uppercase;
+}
+
+
+/* Keep headline primarily on left */
+
+.hero h1 {
+    max-width: 760px;
+
+    margin: 0 0 36px;
+
+    font-size:
+        clamp(3.8rem, 5.7vw, 6.6rem);
+
+    font-weight: 560;
+    letter-spacing: -0.062em;
+    line-height: 0.92;
+}
+
+
+.hero h1 span {
+    color: var(--accent);
+}
+
+
+.hero-statement {
+    max-width: 650px;
+
+    margin-bottom: 38px;
+}
+
+
+/* =========================
+   HERO ARTWORK
+========================= */
+
+.hero-visual {
+    width: 100%;
+    min-width: 0;
+
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    justify-self: end;
+}
+
+
+.hero-network-image {
+    display: block;
+
+    width: 100%;
+    max-width: 430px;
+
+    height: auto;
+
+    margin: 0;
+
+    object-fit: contain;
+
+    opacity: 0.90;
+
+    border-radius: 18px;
+
+    box-shadow: none;
+
+    filter:
+        saturate(0.88)
+        contrast(0.97);
+}
+
+
+/* Line underneath BOTH hero columns */
+
+.hero-line {
+    grid-column: 1 / -1;
+
+    width: 100%;
+    height: 1px;
+
+    margin-top: 25px;
+}
+
+
+/* =========================
+   FOUNDER NAME
+========================= */
+
+.founder-name {
+    margin-bottom: 24px;
+
+    color: var(--accent);
+
+    font-size: 1.05rem;
+    font-weight: 800;
+    letter-spacing: 0.075em;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   IPAD / TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .hero {
+        min-height: auto;
+
+        padding:
+            80px
+            0
+            90px;
+    }
+
+
+    .hero-grid {
+        grid-template-columns:
+            minmax(0, 1.18fr)
+            minmax(250px, 0.82fr);
+
+        gap: 28px;
+    }
+
+
+    .hero .eyebrow {
+        font-size: 0.84rem;
+    }
+
+
+    .hero h1 {
+        max-width: 560px;
+
+        font-size:
+            clamp(3.2rem, 6.8vw, 4.7rem);
+
+        line-height: 0.94;
+    }
+
+
+    .hero-statement {
+        max-width: 540px;
+
+        font-size:
+            clamp(1.05rem, 2vw, 1.35rem);
+    }
+
+
+    .hero-network-image {
+        max-width: 340px;
+    }
+
+}
+
+
+/* =========================
+   SMALLER IPAD / TABLET
+========================= */
+
+@media (max-width: 760px) and (min-width: 601px) {
+
+    .hero {
+        width: 90%;
+    }
+
+
+    .hero-grid {
+        grid-template-columns:
+            minmax(0, 1.15fr)
+            minmax(210px, 0.85fr);
+
+        gap: 20px;
+    }
+
+
+    .hero h1 {
+        font-size:
+            clamp(2.9rem, 7vw, 3.8rem);
+    }
+
+
+    .hero-network-image {
+        max-width: 280px;
+    }
+
+}
+
+
+/* =========================
+   PHONE — TEXT ONLY
+========================= */
+
+@media screen and (max-width: 600px) {
+
+    .hero {
+        width: 90%;
+
+        min-height: auto;
+
+        padding:
+            70px
+            0
+            80px;
+    }
+
+
+    .hero-grid {
+        grid-template-columns: 1fr !important;
+        gap: 0 !important;
+    }
+
+
+    .hero-visual,
+    .hero-network-image {
+        display: none !important;
+    }
+
+
+    .hero .eyebrow {
+        font-size: 0.76rem;
+        letter-spacing: 0.15em;
+    }
+
+
+    .hero h1 {
+        max-width: 100%;
+
+        font-size:
+            clamp(3.15rem, 14vw, 4.6rem);
+
+        line-height: 0.94;
+    }
+
+
+    .hero-line {
+        grid-column: 1;
+
+        margin-top: 55px;
+    }
+
+
+    .founder-name {
+        font-size: 0.95rem;
+    }
+
+}
+
+
+/* =========================
+   PHONE LANDSCAPE — TEXT ONLY
+========================= */
+
+@media (max-width: 950px) and (max-height: 700px) {
+
+    .hero-visual,
+    .hero-network-image {
+        display: none !important;
+    }
+
+
+    .hero-grid {
+        grid-template-columns: 1fr !important;
+        gap: 0 !important;
+    }
+
+
+    .hero-content {
+        width: 100%;
+    }
+
+
+    .hero h1 {
+        max-width: 760px;
+    }
+
+}
+
+
 
 /* =========================
    REDUCED MOTION
