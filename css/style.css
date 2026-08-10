@@ -1,3 +1,9 @@
+/* =========================================================
+   SARASWAT INTEGRATED SERVICES
+   COMPLETE CLEAN STYLESHEET
+========================================================= */
+
+
 /* =========================
    DESIGN SYSTEM
 ========================= */
@@ -64,6 +70,7 @@ body {
     line-height: 1.6;
 
     -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 body.menu-open {
@@ -192,6 +199,7 @@ textarea:focus-visible {
 
 .brand:hover {
     background: var(--accent);
+
     transform: translateY(-1px);
 }
 
@@ -274,8 +282,25 @@ textarea:focus-visible {
 
 
 /* =========================
-   HERO
+   SHARED EYEBROW
 ========================= */
+
+.eyebrow {
+    margin-bottom: 28px;
+
+    color: var(--accent);
+
+    font-size: 0.75rem;
+    font-weight: 750;
+    letter-spacing: 0.17em;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
 
 .hero {
     width: min(92%, var(--content-width));
@@ -300,13 +325,13 @@ textarea:focus-visible {
     display: grid;
 
     grid-template-columns:
-        minmax(0, 1.28fr)
-        minmax(300px, 0.72fr);
+        minmax(0, 1.14fr)
+        minmax(360px, 0.86fr);
 
     align-items: center;
 
     gap:
-        clamp(35px, 5vw, 70px);
+        clamp(35px, 4vw, 58px);
 }
 
 .hero-content {
@@ -317,28 +342,29 @@ textarea:focus-visible {
     z-index: 2;
 }
 
-.eyebrow {
-    margin-bottom: 28px;
+
+/* =========================
+   HERO COMPANY IDENTITY
+========================= */
+
+.hero .eyebrow {
+    margin-bottom: 30px;
 
     color: var(--accent);
 
-    font-size: 0.75rem;
-    font-weight: 750;
-    letter-spacing: 0.17em;
+    font-size: 1.6rem;
+    font-weight: 800;
+
+    letter-spacing: 0.085em;
+    line-height: 1.2;
 
     text-transform: uppercase;
 }
 
 
-/* Larger company identity in hero */
-
-.hero .eyebrow {
-    margin-bottom: 27px;
-
-    font-size: 0.92rem;
-    font-weight: 800;
-    letter-spacing: 0.18em;
-}
+/* =========================
+   HERO HEADLINE
+========================= */
 
 .hero h1 {
     max-width: 760px;
@@ -352,6 +378,7 @@ textarea:focus-visible {
         clamp(3.8rem, 5.7vw, 6.6rem);
 
     font-weight: 560;
+
     letter-spacing: -0.062em;
     line-height: 0.92;
 }
@@ -359,6 +386,11 @@ textarea:focus-visible {
 .hero h1 span {
     color: var(--accent);
 }
+
+
+/* =========================
+   HERO SUPPORTING TEXT
+========================= */
 
 .hero-statement {
     max-width: 650px;
@@ -383,8 +415,69 @@ textarea:focus-visible {
 
 
 /* =========================
-   BUTTONS
+   HERO ARTWORK
 ========================= */
+
+.hero-visual {
+    width: 100%;
+    min-width: 0;
+
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    justify-self: end;
+}
+
+.hero-network-image {
+    display: block;
+
+    width: 100%;
+    max-width: 520px;
+
+    height: auto;
+
+    margin-left: auto;
+
+    object-fit: contain;
+
+    opacity: 0.94;
+
+    border-radius: 18px;
+
+    box-shadow: none;
+
+    filter:
+        saturate(0.90)
+        contrast(0.98);
+}
+
+
+/* Line across whole hero */
+
+.hero-line {
+    grid-column: 1 / -1;
+
+    width: 100%;
+    height: 1px;
+
+    margin-top: 25px;
+
+    background:
+        linear-gradient(
+            to right,
+            var(--accent),
+            rgba(148, 102, 63, 0.15),
+            transparent
+        );
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
 
 .button {
     display: inline-flex;
@@ -441,67 +534,9 @@ textarea:focus-visible {
 }
 
 
-/* =========================
-   HERO INDIA ↔ EUROPE ARTWORK
-========================= */
-
-.hero-visual {
-    width: 100%;
-    min-width: 0;
-
-    margin: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-    justify-self: end;
-}
-
-.hero-network-image {
-    display: block;
-
-    width: 100%;
-    max-width: 430px;
-
-    height: auto;
-
-    margin: 0;
-
-    object-fit: contain;
-
-    opacity: 0.90;
-
-    border-radius: 18px;
-
-    box-shadow: none;
-
-    filter:
-        saturate(0.88)
-        contrast(0.97);
-}
-
-.hero-line {
-    grid-column: 1 / -1;
-
-    width: 100%;
-    height: 1px;
-
-    margin-top: 25px;
-
-    background:
-        linear-gradient(
-            to right,
-            var(--accent),
-            rgba(148, 102, 63, 0.15),
-            transparent
-        );
-}
-
-
-/* =========================
-   SHARED SECTIONS
-========================= */
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
 
 .section {
     width: min(92%, var(--content-width));
@@ -532,6 +567,7 @@ textarea:focus-visible {
         clamp(2.8rem, 5vw, 5.5rem);
 
     font-weight: 560;
+
     letter-spacing: -0.055em;
     line-height: 0.96;
 }
@@ -589,9 +625,9 @@ textarea:focus-visible {
 }
 
 
-/* =========================
-   DARK FOCUS SECTION
-========================= */
+/* =========================================================
+   AREAS OF FOCUS
+========================================================= */
 
 .section-dark {
     width: 100%;
@@ -685,6 +721,7 @@ textarea:focus-visible {
         );
 
     font-weight: 540;
+
     letter-spacing: -0.035em;
     line-height: 1.1;
 }
@@ -707,9 +744,9 @@ textarea:focus-visible {
 }
 
 
-/* =========================
+/* =========================================================
    VENTURES
-========================= */
+========================================================= */
 
 .ventures-section {
     padding-bottom: 150px;
@@ -748,6 +785,7 @@ textarea:focus-visible {
 
     font-size: 0.72rem;
     font-weight: 750;
+
     letter-spacing: 0.08em;
 
     text-transform: uppercase;
@@ -778,6 +816,7 @@ textarea:focus-visible {
 
     font-size: 0.72rem;
     font-weight: 750;
+
     letter-spacing: 0.13em;
 
     text-transform: uppercase;
@@ -799,6 +838,7 @@ textarea:focus-visible {
         );
 
     font-weight: 550;
+
     letter-spacing: -0.055em;
     line-height: 0.95;
 }
@@ -815,9 +855,9 @@ textarea:focus-visible {
 }
 
 
-/* =========================
+/* =========================================================
    APPROACH
-========================= */
+========================================================= */
 
 .approach-section {
     width: 100%;
@@ -853,6 +893,7 @@ textarea:focus-visible {
         );
 
     font-weight: 540;
+
     letter-spacing: -0.06em;
     line-height: 0.95;
 }
@@ -869,9 +910,9 @@ textarea:focus-visible {
 }
 
 
-/* =========================
+/* =========================================================
    FOUNDER
-========================= */
+========================================================= */
 
 .founder-grid {
     align-items: start;
@@ -882,15 +923,17 @@ textarea:focus-visible {
 }
 
 .founder-name {
-    margin-bottom: 24px;
+    margin-bottom: 22px;
 
     color: var(--accent);
 
-    font-size: 1.05rem;
+    font-size: 1.5rem;
     font-weight: 800;
-    letter-spacing: 0.075em;
 
-    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    line-height: 1.25;
+
+    text-transform: none;
 }
 
 .founder-content > p:not(
@@ -929,9 +972,9 @@ textarea:focus-visible {
 }
 
 
-/* =========================
+/* =========================================================
    CONTACT
-========================= */
+========================================================= */
 
 .contact-section {
     width: 100%;
@@ -987,6 +1030,7 @@ textarea:focus-visible {
         );
 
     font-weight: 540;
+
     letter-spacing: -0.06em;
     line-height: 0.94;
 }
@@ -1026,9 +1070,9 @@ textarea:focus-visible {
 }
 
 
-/* =========================
+/* =========================================================
    CONTACT FORM
-========================= */
+========================================================= */
 
 .contact-form {
     width: 100%;
@@ -1073,6 +1117,7 @@ textarea:focus-visible {
 
     font-size: 0.77rem;
     font-weight: 650;
+
     letter-spacing: 0.03em;
 }
 
@@ -1191,7 +1236,9 @@ textarea:focus-visible {
 }
 
 
-/* Honeypot */
+/* =========================
+   HONEYPOT
+========================= */
 
 .form-honeypot {
     position: absolute !important;
@@ -1222,7 +1269,9 @@ textarea:focus-visible {
 }
 
 
-/* Submit button */
+/* =========================
+   FORM SUBMIT
+========================= */
 
 .form-submit {
     display: inline-flex;
@@ -1304,9 +1353,6 @@ textarea:focus-visible {
     box-shadow: none;
 }
 
-
-/* Form result */
-
 .form-status {
     min-height: 24px;
 
@@ -1325,9 +1371,9 @@ textarea:focus-visible {
 }
 
 
-/* =========================
+/* =========================================================
    CONTACT SIDE
-========================= */
+========================================================= */
 
 .contact-side {
     width: 100%;
@@ -1341,11 +1387,11 @@ textarea:focus-visible {
         0
         22px;
 
-    color:
-        var(--contact-accent);
+    color: var(--contact-accent);
 
     font-size: 0.72rem;
     font-weight: 750;
+
     letter-spacing: 0.13em;
 
     text-transform: uppercase;
@@ -1404,9 +1450,9 @@ textarea:focus-visible {
 }
 
 
-/* =========================
+/* =========================================================
    FOOTER
-========================= */
+========================================================= */
 
 .site-footer {
     min-height: 110px;
@@ -1532,9 +1578,9 @@ textarea:focus-visible {
 }
 
 
-/* =========================
-   IPAD / TABLET
-========================= */
+/* =========================================================
+   TABLET / IPAD
+========================================================= */
 
 @media (max-width: 1000px) {
 
@@ -1549,14 +1595,15 @@ textarea:focus-visible {
 
     .hero-grid {
         grid-template-columns:
-            minmax(0, 1.18fr)
-            minmax(250px, 0.82fr);
+            minmax(0, 1fr)
+            minmax(300px, 0.95fr);
 
-        gap: 28px;
+        gap: 26px;
     }
 
     .hero .eyebrow {
-        font-size: 0.84rem;
+        font-size: 1.25rem;
+        letter-spacing: 0.08em;
     }
 
     .hero h1 {
@@ -1584,15 +1631,19 @@ textarea:focus-visible {
     }
 
     .hero-network-image {
-        max-width: 340px;
+        max-width: 430px;
+    }
+
+    .founder-name {
+        font-size: 1.3rem;
     }
 
 }
 
 
-/* =========================
-   MOBILE NAV + TABLET STACKING
-========================= */
+/* =========================================================
+   MOBILE NAVIGATION + SECTION STACKING
+========================================================= */
 
 @media (max-width: 900px) {
 
@@ -1685,7 +1736,7 @@ textarea:focus-visible {
     }
 
 
-    /* Sections */
+    /* General sections */
 
     .section,
     .section-dark {
@@ -1764,9 +1815,10 @@ textarea:focus-visible {
 }
 
 
-/* =========================
-   SMALLER IPAD
-========================= */
+/* =========================================================
+   SMALLER TABLETS
+   601px — 760px
+========================================================= */
 
 @media (max-width: 760px) and (min-width: 601px) {
 
@@ -1776,10 +1828,14 @@ textarea:focus-visible {
 
     .hero-grid {
         grid-template-columns:
-            minmax(0, 1.15fr)
-            minmax(210px, 0.85fr);
+            minmax(0, 1.10fr)
+            minmax(230px, 0.90fr);
 
         gap: 20px;
+    }
+
+    .hero .eyebrow {
+        font-size: 1.08rem;
     }
 
     .hero h1 {
@@ -1792,15 +1848,19 @@ textarea:focus-visible {
     }
 
     .hero-network-image {
-        max-width: 280px;
+        max-width: 330px;
+    }
+
+    .founder-name {
+        font-size: 1.2rem;
     }
 
 }
 
 
-/* =========================
+/* =========================================================
    MOBILE
-========================= */
+========================================================= */
 
 @media screen and (max-width: 600px) {
 
@@ -1832,9 +1892,12 @@ textarea:focus-visible {
     }
 
     .hero .eyebrow {
-        font-size: 0.76rem;
+        margin-bottom: 24px;
 
-        letter-spacing: 0.15em;
+        font-size: 1.05rem;
+
+        letter-spacing: 0.075em;
+        line-height: 1.25;
     }
 
     .hero h1 {
@@ -1967,7 +2030,7 @@ textarea:focus-visible {
     /* Founder */
 
     .founder-name {
-        font-size: 0.95rem;
+        font-size: 1.15rem;
     }
 
 
@@ -2000,9 +2063,9 @@ textarea:focus-visible {
 }
 
 
-/* =========================
+/* =========================================================
    PHONE LANDSCAPE
-========================= */
+========================================================= */
 
 @media (max-width: 950px) and (max-height: 700px) {
 
@@ -2039,10 +2102,9 @@ textarea:focus-visible {
 }
 
 
-
-/* =========================
+/* =========================================================
    REDUCED MOTION
-========================= */
+========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -2054,220 +2116,5 @@ textarea:focus-visible {
         transition:
             none !important;
     }
-}
 
-
-   /* =========================================================
-   FINAL SIS HERO + BRAND HIERARCHY
-========================================================= */
-
-
-/* =========================
-   DESKTOP
-========================= */
-
-/* Saraswat Integrated Services */
-
-.hero .eyebrow {
-    margin-bottom: 28px;
-
-    color: var(--accent);
-
-    font-size: 1.5rem;
-    font-weight: 800;
-
-    letter-spacing: 0.095em;
-    line-height: 1.2;
-
-    text-transform: uppercase;
-}
-
-
-/* Hero layout:
-   text left / artwork right */
-
-.hero-grid {
-    grid-template-columns:
-        minmax(0, 1.14fr)
-        minmax(360px, 0.86fr);
-
-    gap: clamp(35px, 4vw, 58px);
-
-    align-items: center;
-}
-
-
-/* India → Europe artwork */
-
-.hero-visual {
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-    justify-self: end;
-
-    margin: 0;
-}
-
-
-.hero-network-image {
-    display: block;
-
-    width: 100%;
-    max-width: 520px;
-
-    height: auto;
-
-    margin-left: auto;
-
-    object-fit: contain;
-
-    opacity: 0.94;
-
-    border-radius: 18px;
-
-    box-shadow: none;
-
-    filter:
-        saturate(0.9)
-        contrast(0.98);
-}
-
-
-/* Founder */
-
-.founder-name {
-    margin-bottom: 22px;
-
-    color: var(--accent);
-
-    font-size: 1.5rem;
-    font-weight: 800;
-
-    letter-spacing: 0.04em;
-    line-height: 1.25;
-
-    text-transform: none;
-}
-
-
-/* =========================
-   IPAD / TABLET
-========================= */
-
-@media (max-width: 1000px) {
-
-    .hero .eyebrow {
-        font-size: 1.22rem;
-        letter-spacing: 0.085em;
-    }
-
-
-    .hero-grid {
-        grid-template-columns:
-            minmax(0, 1fr)
-            minmax(320px, 0.95fr);
-
-        gap: 26px;
-    }
-
-
-    .hero-network-image {
-        max-width: 430px;
-    }
-
-
-    .founder-name {
-        font-size: 1.3rem;
-    }
-
-}
-
-
-/* =========================
-   SMALLER IPAD
-========================= */
-
-@media (max-width: 760px) and (min-width: 601px) {
-
-    .hero .eyebrow {
-        font-size: 1.08rem;
-    }
-
-
-    .hero-grid {
-        grid-template-columns:
-            minmax(0, 1fr)
-            minmax(300px, 0.92fr);
-
-        gap: 20px;
-    }
-
-
-    .hero-network-image {
-        max-width: 360px;
-    }
-
-
-    .founder-name {
-        font-size: 1.2rem;
-    }
-
-}
-
-
-/* =========================
-   PHONE
-========================= */
-
-@media (max-width: 600px) {
-
-    .hero-grid {
-        grid-template-columns: 1fr !important;
-        gap: 0 !important;
-    }
-
-
-    .hero-visual,
-    .hero-network-image {
-        display: none !important;
-    }
-
-
-    .hero .eyebrow {
-        font-size: 1rem;
-
-        letter-spacing: 0.08em;
-    }
-
-
-    .founder-name {
-        font-size: 1.15rem;
-    }
-
-}
-
-
-/* =========================
-   PHONE LANDSCAPE
-========================= */
-
-@media (max-width: 950px) and (max-height: 700px) {
-
-    .hero-visual,
-    .hero-network-image {
-        display: none !important;
-    }
-
-
-    .hero-grid {
-        grid-template-columns: 1fr !important;
-        gap: 0 !important;
-    }
-
-}
-
-   
 }
