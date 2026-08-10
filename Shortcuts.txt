@@ -1,0 +1,7 @@
+For what you’re doing most often, the useful ones are:
+
+* Search inside the current file: Command + F on Mac/iPad keyboard, or Ctrl + F on Windows/Linux. GitHub specifically supports this in the file editor. 
+* Next search result: Command + G / Ctrl + G. 
+* Previous search result: Command + Shift + G / Ctrl + Shift + G. 
+* Replace text: Command + Option + F on Mac, or Ctrl + Shift + F on Windows/Linux. 
+* Jump directly to a line number: Alt + G in the editor. 
