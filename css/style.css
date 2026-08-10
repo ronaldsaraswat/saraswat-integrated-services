@@ -2185,3 +2185,124 @@ textarea:focus-visible {
 
 }
 
+/* =========================================================
+   FINAL HERO SCALE + BRAND HIERARCHY
+========================================================= */
+
+
+/* Company name */
+
+.hero .eyebrow {
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: 0.11em;
+    line-height: 1.25;
+
+    margin-bottom: 28px;
+}
+
+
+/* Give artwork a little more room */
+
+.hero-grid {
+    grid-template-columns:
+        minmax(0, 1.22fr)
+        minmax(340px, 0.78fr);
+
+    gap: clamp(38px, 4.5vw, 65px);
+}
+
+
+/* Slightly larger artwork */
+
+.hero-network-image {
+    width: 100%;
+    max-width: 485px;
+
+    margin-left: auto;
+
+    opacity: 0.92;
+}
+
+
+/* Founder name */
+
+.founder-name {
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: 0.055em;
+    line-height: 1.3;
+
+    text-transform: none;
+}
+
+
+/* =========================
+   IPAD / TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .hero .eyebrow {
+        font-size: 1.08rem;
+        letter-spacing: 0.10em;
+    }
+
+    .hero-grid {
+        grid-template-columns:
+            minmax(0, 1.15fr)
+            minmax(300px, 0.85fr);
+
+        gap: 26px;
+    }
+
+    .hero-network-image {
+        max-width: 395px;
+    }
+
+    .founder-name {
+        font-size: 1.22rem;
+    }
+
+}
+
+
+/* =========================
+   SMALLER TABLETS
+========================= */
+
+@media (max-width: 760px) and (min-width: 601px) {
+
+    .hero-grid {
+        grid-template-columns:
+            minmax(0, 1.12fr)
+            minmax(245px, 0.88fr);
+    }
+
+    .hero-network-image {
+        max-width: 320px;
+    }
+
+}
+
+
+/* =========================
+   PHONE
+========================= */
+
+@media (max-width: 600px) {
+
+    .hero .eyebrow {
+        font-size: 0.95rem;
+    }
+
+    .hero-visual,
+    .hero-network-image {
+        display: none !important;
+    }
+
+    .founder-name {
+        font-size: 1.1rem;
+    }
+
+}
