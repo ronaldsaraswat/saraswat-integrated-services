@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="SIS">
+  <rect width="512" height="512" rx="76" fill="#08223e"/>
+  <text x="256" y="275" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="182" font-weight="700" fill="#ffffff">SIS</text>
+  <path d="M124 348 Q256 314 388 348"
+        fill="none" stroke="#d2a658" stroke-width="10"
+        stroke-linecap="round"/>
+</svg>
