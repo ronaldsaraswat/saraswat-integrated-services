@@ -843,15 +843,36 @@ textarea:focus-visible {
     line-height: 0.95;
 }
 
-.venture-main > p:last-child {
-    max-width: 650px;
-
-    margin: 0;
+.venture-description,
+.venture-origin {
+    max-width: 680px;
 
     color: var(--text-secondary);
 
     font-size: 1rem;
     line-height: 1.8;
+}
+
+.venture-description {
+    margin: 0 0 18px;
+}
+
+.venture-origin {
+    margin: 0;
+}
+
+.venture-link {
+    margin-top: 28px;
+}
+
+.ventures-note {
+    max-width: 650px;
+    margin: 24px 0 0;
+
+    color: var(--text-secondary);
+
+    font-size: 0.9rem;
+    line-height: 1.7;
 }
 
 
