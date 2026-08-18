@@ -1,6 +1,10 @@
 {
   "name": "Saraswat Integrated Services",
   "short_name": "SIS",
+  "description": "Scientific software, digital products and selected ventures.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
   "icons": [
     {
       "src": "/favicon-192x192.png",
